@@ -55,7 +55,7 @@ export default function Performance() {
                 fill="#FCEB00" 
                 radius={[4, 4, 0, 0]} 
                 barSize={40}
-                label={{ position: 'top', fill: '#fff', fontSize: 10, fontWeight: 'bold', offset: 10 }}
+                label={{ position: 'top', fill: '#fff', fontSize: 11, fontWeight: 'bold', offset: 10 }}
               />
               <Line 
                 yAxisId="right" 
@@ -65,7 +65,14 @@ export default function Performance() {
                 stroke="#005aa5" 
                 strokeWidth={3} 
                 dot={{ r: 6, fill: '#005aa5', strokeWidth: 2, stroke: '#fff' }}
-                label={{ position: 'top', fill: '#005aa5', fontSize: 10, fontWeight: 'bold', offset: 10 }}
+                label={{ 
+                  position: 'bottom', 
+                  fill: '#fff', 
+                  fontSize: 10, 
+                  fontWeight: 'bold', 
+                  offset: 15,
+                  background: { fill: '#005aa5', padding: 4, radius: 4 } 
+                }}
               />
             </ComposedChart>
           </ResponsiveContainer>
