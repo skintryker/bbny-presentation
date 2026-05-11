@@ -32,7 +32,7 @@ export default function Performance() {
                 fontSize={12}
                 tickLine={false}
                 axisLine={false}
-                label={{ value: 'Investimentos (US$ Bi)', angle: -90, position: 'insideLeft', fill: '#ffffff80', fontSize: 12 }}
+                label={{ value: 'Investimentos (US$ Mi)', angle: -90, position: 'insideLeft', fill: '#ffffff80', fontSize: 12 }}
               />
               <YAxis 
                 yAxisId="right" 
@@ -48,7 +48,7 @@ export default function Performance() {
                 itemStyle={{ color: '#fff' }}
               />
               <Legend verticalAlign="top" height={36}/>
-              <Bar yAxisId="left" dataKey="investments" name="Volume Investimentos (Bi)" fill="#FCEB00" radius={[4, 4, 0, 0]} barSize={40} />
+              <Bar yAxisId="left" dataKey="investments" name="Volume Investimentos (Mi)" fill="#FCEB00" radius={[4, 4, 0, 0]} barSize={40} />
               <Line yAxisId="right" type="monotone" dataKey="clients" name="Clientes Ativos" stroke="#005aa5" strokeWidth={3} dot={{ r: 6, fill: '#005aa5', strokeWidth: 2, stroke: '#fff' }} />
             </ComposedChart>
           </ResponsiveContainer>
