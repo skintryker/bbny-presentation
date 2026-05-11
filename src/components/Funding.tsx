@@ -2,15 +2,13 @@
 
 import React from 'react';
 import { 
-  BarChart, 
-  Bar, 
   XAxis, 
   YAxis, 
   CartesianGrid, 
   Tooltip, 
   ResponsiveContainer, 
-  Cell,
   Line,
+  Bar,
   ComposedChart,
   Legend
 } from 'recharts';
@@ -18,6 +16,43 @@ import { presentationData } from '../data/presentationData';
 
 const Funding = () => {
   const { funding } = presentationData;
+
+  const RenderCustomBarLabel = (props: any) => {
+    const { x, y, width, value } = props;
+    return (
+      <text 
+        x={x + width / 2} 
+        y={y + 20} 
+        fill="#002d72" 
+        textAnchor="middle" 
+        dominantBaseline="middle" 
+        fontSize={10} 
+        fontWeight="bold"
+      >
+        {value}
+      </text>
+    );
+  };
+
+  const RenderCustomLineLabel = (props: any) => {
+    const { x, y, value } = props;
+    return (
+      <g>
+        <circle cx={x} cy={y - 20} r={10} fill="#005aa5" />
+        <text 
+          x={x} 
+          y={y - 20} 
+          fill="#fff" 
+          textAnchor="middle" 
+          dominantBaseline="middle" 
+          fontSize={10} 
+          fontWeight="bold"
+        >
+          {value}
+        </text>
+      </g>
+    );
+  };
 
   return (
     <section className="py-24 px-6 bg-white/5">
@@ -30,7 +65,7 @@ const Funding = () => {
         <div className="glass-card p-8 mb-12">
           <div className="h-[450px] w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <ComposedChart data={funding.chartData} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
+              <ComposedChart data={funding.chartData} margin={{ top: 30, right: 30, left: 20, bottom: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
                 <XAxis 
                   dataKey="date" 
@@ -68,7 +103,7 @@ const Funding = () => {
                   fill="#FCEB00" 
                   radius={[4, 4, 0, 0]} 
                   barSize={40}
-                  label={{ position: 'top', fill: '#fff', fontSize: 11, fontWeight: 'bold', offset: 10 }}
+                  label={<RenderCustomBarLabel />}
                 />
                 <Line 
                   yAxisId="right" 
@@ -78,13 +113,7 @@ const Funding = () => {
                   stroke="#005aa5" 
                   strokeWidth={3} 
                   dot={{ r: 6, fill: '#005aa5', strokeWidth: 2, stroke: '#fff' }}
-                  label={{ 
-                    position: 'bottom', 
-                    fill: '#005aa5', 
-                    fontSize: 11, 
-                    fontWeight: 'bold', 
-                    offset: 15
-                  }}
+                  label={<RenderCustomLineLabel />}
                 />
               </ComposedChart>
             </ResponsiveContainer>
