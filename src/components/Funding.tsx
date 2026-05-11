@@ -23,7 +23,7 @@ const Funding = () => {
     return (
       <text 
         x={x + width / 2} 
-        y={y + 18} 
+        y={y + 22} 
         fill="#002d72" 
         textAnchor="middle" 
         dominantBaseline="middle" 
@@ -39,10 +39,10 @@ const Funding = () => {
     const { x, y, value } = props;
     return (
       <g>
-        <circle cx={x} cy={y - 25} r={11} fill="#005aa5" stroke="#fff" strokeWidth={1} />
+        <circle cx={x} cy={y - 35} r={11} fill="#005aa5" stroke="#fff" strokeWidth={1} />
         <text 
           x={x} 
-          y={y - 25} 
+          y={y - 35} 
           fill="#fff" 
           textAnchor="middle" 
           dominantBaseline="middle" 
@@ -66,7 +66,7 @@ const Funding = () => {
         <div className="glass-card p-8 mb-12">
           <div className="h-[450px] w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <ComposedChart data={funding.chartData} margin={{ top: 40, right: 30, left: 20, bottom: 20 }}>
+              <ComposedChart data={funding.chartData} margin={{ top: 60, right: 30, left: 20, bottom: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
                 <XAxis 
                   dataKey="date" 
