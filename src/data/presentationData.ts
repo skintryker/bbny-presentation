@@ -50,12 +50,13 @@ export const presentationData = {
     description: "Gestão ativa de relacionamento com grandes Trading Companies globais, assegurando continuidade operacional e expansão gradual do portfólio.",
     clients: ["Bunge", "CHS", "Olam", "CFSIT", "BTG Pactual Commodities"],
     chartData: [
-      { date: "31/12/2023", balance: 0.45, clients: 2 },
-      { date: "31/12/2024", balance: 0.62, clients: 3 },
-      { date: "31/12/2025", balance: 1.18, clients: 4 },
-      { date: "30/04/2026", balance: 1.38, clients: 5 },
+      { date: "30/12/2022", balance: 7.5, clients: 1 },
+      { date: "29/12/2023", balance: 552.7, clients: 1 },
+      { date: "31/12/2024", balance: 644.6, clients: 3 },
+      { date: "31/12/2025", balance: 1445.1, clients: 4 },
+      { date: "30/04/2026", balance: 1433.7, clients: 4 },
     ],
-    note: "Dados coletados no Power BI Banco do Brasil NY Branch.",
+    note: "Valores em milhões de USD. Dados extraídos do Power BI Banco do Brasil NY Branch.",
   },
   synergy: {
     title: "Sinergia com BB Brasil",
