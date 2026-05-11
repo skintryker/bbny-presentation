@@ -66,13 +66,13 @@ const ProjectHunter = () => {
                <div className="space-y-8">
                   <div className="flex gap-4">
                     <div className="mt-1"><ShieldCheck className="text-bb-yellow w-5 h-5" /></div>
-                    <p className="text-white font-bold text-lg leading-snug">
+                    <p className="text-white text-lg leading-snug">
                       Criar conexões com clientes através das Câmaras, tanto empresas brasileiras como americanas com negócios no Brasil
                     </p>
                   </div>
                   <div className="flex gap-4">
                     <div className="mt-1"><ShieldCheck className="text-bb-yellow w-5 h-5" /></div>
-                    <p className="text-white font-bold text-lg leading-snug">
+                    <p className="text-white text-lg leading-snug">
                       Foco no produto de crédito Working Capital e Forfait
                     </p>
                   </div>
