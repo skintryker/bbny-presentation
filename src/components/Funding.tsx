@@ -61,7 +61,15 @@ const Funding = () => {
                   itemStyle={{ color: '#fff' }}
                 />
                 <Legend verticalAlign="top" height={36}/>
-                <Bar yAxisId="left" dataKey="balance" name="Saldo Vigente (Mi)" fill="#FCEB00" radius={[4, 4, 0, 0]} barSize={40} />
+                <Bar 
+                  yAxisId="left" 
+                  dataKey="balance" 
+                  name="Saldo Vigente (Mi)" 
+                  fill="#FCEB00" 
+                  radius={[4, 4, 0, 0]} 
+                  barSize={40}
+                  label={{ position: 'top', fill: '#fff', fontSize: 10, fontWeight: 'bold', offset: 10 }}
+                />
                 <Line yAxisId="right" type="monotone" dataKey="clients" name="Clientes Ativos" stroke="#005aa5" strokeWidth={3} dot={{ r: 6, fill: '#005aa5', strokeWidth: 2, stroke: '#fff' }} />
               </ComposedChart>
             </ResponsiveContainer>
