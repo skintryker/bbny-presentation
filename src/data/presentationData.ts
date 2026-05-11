@@ -125,7 +125,7 @@ export const presentationData = {
       { label: "Clientes Target", value: 154, description: "Base identificada com produtos de crédito ativos" },
       { label: "Sem Interesse ou Sem Retorno", value: 100, description: "Clientes sem perfil ou interesse imediato" },
       { label: "Aguardando Retorno para Agendar Reunião", value: 37, description: "Gerente de relacionamento em contato com o cliente" },
-      { label: "Reuniões Realizadas com Cotações Indicativas Enviadas e/ou em Processo de Abertura de Conta", value: 17, description: "Reuniões estratégicas com PPS em análise" },
+      { label: "Reuniões Realizadas com Clientes", value: 17, description: "Cotações enviadas e DDA em processo de abertura" },
     ],
   },
   caseStudy: {
