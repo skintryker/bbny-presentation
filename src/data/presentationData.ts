@@ -48,7 +48,7 @@ export const presentationData = {
   funding: {
     title: "Structured Letters of Credit",
     description: "Gestão ativa de relacionamento com grandes Trading Companies globais, assegurando continuidade operacional e expansão gradual do portfólio.",
-    clients: ["Bunge", "CHS", "Olam", "CFSIT", "BTG Pactual Commodities"],
+    clients: ["Bunge", "CHS", "Olam", "CFSIT"],
     chartData: [
       { date: "30/12/2022", balance: 7.5, clients: 1 },
       { date: "29/12/2023", balance: 552.7, clients: 1 },
