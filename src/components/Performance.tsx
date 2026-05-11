@@ -57,7 +57,16 @@ export default function Performance() {
                 barSize={40}
                 label={{ position: 'top', fill: '#fff', fontSize: 10, fontWeight: 'bold', offset: 10 }}
               />
-              <Line yAxisId="right" type="monotone" dataKey="clients" name="Clientes Ativos" stroke="#005aa5" strokeWidth={3} dot={{ r: 6, fill: '#005aa5', strokeWidth: 2, stroke: '#fff' }} />
+              <Line 
+                yAxisId="right" 
+                type="monotone" 
+                dataKey="clients" 
+                name="Clientes Ativos" 
+                stroke="#005aa5" 
+                strokeWidth={3} 
+                dot={{ r: 6, fill: '#005aa5', strokeWidth: 2, stroke: '#fff' }}
+                label={{ position: 'top', fill: '#005aa5', fontSize: 10, fontWeight: 'bold', offset: 10 }}
+              />
             </ComposedChart>
           </ResponsiveContainer>
         </div>
