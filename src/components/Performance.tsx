@@ -16,9 +16,12 @@ export default function Performance() {
           <p className="text-white/70 max-w-3xl mx-auto">{performance.description}</p>
         </div>
 
-        <div className="h-[500px] w-full glass-card p-8">
+        <div className="h-[350px] md:h-[500px] w-full glass-card p-4 md:p-8">
           <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart data={performance.chartData} margin={{ top: 30, right: 30, left: 20, bottom: 20 }}>
+            <ComposedChart 
+              data={performance.chartData} 
+              margin={{ top: 20, right: -10, left: -20, bottom: 0 }}
+            >
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
               <XAxis 
                 dataKey="period" 
