@@ -122,10 +122,10 @@ export const presentationData = {
     context: "Dez/2025: Alinhamento estratégico com o Corporate BBNY e definição de metas.",
     description: "Conversão de clientes de crédito para soluções DDA e investimentos.",
     funnel: [
-      { label: "Clientes Target", value: 148, description: "Base identificada com produtos de crédito ativos" },
-      { label: "Desqualificados / Sem Retorno", value: 65, description: "Clientes sem perfil ou interesse imediato" },
-      { label: "Em Andamento", value: 34, description: "Reuniões realizadas e propostas em análise" },
-      { label: "Conversão Ativa", value: 15, description: "Reuniões estratégicas com PPS em análise" },
+      { label: "Clientes Target", value: 154, description: "Base identificada com produtos de crédito ativos" },
+      { label: "Sem Interesse ou Sem Retorno", value: 100, description: "Clientes sem perfil ou interesse imediato" },
+      { label: "Aguardando Retorno para Agendar Reunião", value: 37, description: "Reuniões realizadas e propostas em análise" },
+      { label: "Reuniões Realizadas com Cotações Indicativas Enviadas e/ou em Processo de Abertura de Conta", value: 17, description: "Reuniões estratégicas com PPS em análise" },
     ],
   },
   caseStudy: {
