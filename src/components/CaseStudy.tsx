@@ -49,7 +49,7 @@ const CaseStudy = () => {
 
             {/* Final Result - Centered Premium Banner */}
             <div className="relative max-w-3xl mx-auto mt-8">
-              <div className="relative bg-gradient-to-br from-bb-blue-dark/90 to-bb-blue-light/40 backdrop-blur-md border border-white/10 p-10 rounded-2xl overflow-hidden group hover:border-bb-yellow/30 transition-all duration-700">
+              <div className="relative bg-gradient-to-br from-bb-blue-dark/90 to-bb-blue-light/40 backdrop-blur-md border border-white/10 p-10 rounded-[40px] overflow-hidden group hover:border-bb-yellow/30 transition-all duration-700">
                 {/* Subtle Inner Accent Line */}
                 <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-bb-yellow/50 to-transparent opacity-50"></div>
 
