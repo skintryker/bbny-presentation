@@ -29,7 +29,7 @@ const InternalSynergy = () => {
           <div className="bg-bb-blue-dark/50 p-8 rounded-xl border border-white/10">
             <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
               <TrendingUp className="text-bb-yellow w-5 h-5" />
-              Público-Alvo Prioritário
+              Público-Alvo
             </h3>
             <div className="flex flex-col gap-3">
               {synergy.targetAudience.map((role, index) => (
