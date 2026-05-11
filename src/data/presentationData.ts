@@ -62,7 +62,7 @@ export const presentationData = {
     title: "Sinergia com BB Brasil",
     description: "A integração com equipes DICOR e CIB fortaleceu a conexão entre Brasil e Nova York, com reuniões estratégicas para reforçar nosso portfólio com foco em Forfait e ampliar o entendimento sobre as soluções BBNY.",
     stats: [
-      { label: "Target (Profissionais)", value: "Acima de 550" },
+      { label: "Target (Profissionais)", value: 550 },
       { label: "Conversão em Reuniões", value: "50%" },
     ],
     targetAudience: [
