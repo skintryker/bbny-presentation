@@ -47,25 +47,37 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            {/* Final Result */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-bb-yellow blur-3xl opacity-5 rounded-full"></div>
-              <div className="relative bg-gradient-to-br from-bb-blue-dark to-bb-blue-light border border-white/10 p-10 rounded-3xl shadow-2xl overflow-hidden">
-                <div className="flex flex-col md:flex-row items-center gap-12">
+            {/* Final Result - Centered Premium Banner */}
+            <div className="relative max-w-xl mx-auto mt-8">
+              {/* Refined Ambient Glow */}
+              <div className="absolute inset-0 bg-bb-yellow/10 blur-[80px] rounded-full"></div>
+
+              <div className="relative bg-gradient-to-br from-bb-blue-dark/90 to-bb-blue-light/40 backdrop-blur-md border border-white/10 p-10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden group hover:border-bb-yellow/30 transition-all duration-700">
+                {/* Subtle Inner Accent Line */}
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-bb-yellow/50 to-transparent opacity-50"></div>
+
+                <div className="flex flex-col md:flex-row items-center justify-center gap-10">
                   <div className="flex flex-col items-center">
-                    <span className="text-7xl md:text-7xl font-black text-white leading-none">06</span>
-                    <span className="text-bb-yellow font-bold uppercase tracking-widest text-[10px] mt-2">Simultâneas</span>
+                    <span className="text-6xl md:text-7xl font-black text-white leading-none tracking-tighter drop-shadow-2xl">
+                      06
+                    </span>
+                    <span className="text-bb-yellow font-bold uppercase tracking-[0.3em] text-[9px] mt-3 opacity-80">
+                      Simultâneas
+                    </span>
                   </div>
+
+                  <div className="w-px h-16 bg-white/10 hidden md:block"></div>
+
                   <div className="flex flex-col gap-2 text-center md:text-left">
-                    <h3 className="text-2xl md:text-2xl font-extrabold text-white leading-tight">
-                      Contas Correntes Abertas
+                    <h3 className="text-xl md:text-2xl font-bold text-white leading-tight tracking-tight">
+                      Contas Correntes <br className="hidden md:block"/> Abertas
                     </h3>
-                    <div className="flex gap-3 justify-center md:justify-start text-bb-yellow font-bold tracking-widest text-lg">
-                      <span>USD</span>
-                      <span className="text-white/20">|</span>
-                      <span>EUR</span>
-                      <span className="text-white/20">|</span>
-                      <span>GBP</span>
+                    <div className="flex gap-4 justify-center md:justify-start items-center mt-1">
+                      <span className="text-bb-yellow font-black tracking-widest text-sm">USD</span>
+                      <div className="w-1.5 h-1.5 rounded-full bg-white/10"></div>
+                      <span className="text-bb-yellow font-black tracking-widest text-sm">EUR</span>
+                      <div className="w-1.5 h-1.5 rounded-full bg-white/10"></div>
+                      <span className="text-bb-yellow font-black tracking-widest text-sm">GBP</span>
                     </div>
                   </div>
                 </div>
