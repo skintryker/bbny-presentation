@@ -48,19 +48,19 @@ const CaseStudy = () => {
             </div>
 
             {/* Final Result */}
-            <div className="relative max-w-2xl mx-auto">
+            <div className="relative">
               <div className="absolute inset-0 bg-bb-yellow blur-3xl opacity-5 rounded-full"></div>
-              <div className="relative bg-gradient-to-br from-bb-blue-dark to-bb-blue-light border border-white/10 p-8 md:p-10 rounded-2xl shadow-2xl overflow-hidden">
-                <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+              <div className="relative bg-gradient-to-br from-bb-blue-dark to-bb-blue-light border border-white/10 p-10 rounded-3xl shadow-2xl overflow-hidden">
+                <div className="flex flex-col md:flex-row items-center gap-12">
                   <div className="flex flex-col items-center">
-                    <span className="text-6xl md:text-7xl font-black text-white leading-none">06</span>
-                    <span className="text-bb-yellow font-bold uppercase tracking-widest text-[9px] mt-2">Simultâneas</span>
+                    <span className="text-7xl md:text-7xl font-black text-white leading-none">06</span>
+                    <span className="text-bb-yellow font-bold uppercase tracking-widest text-[10px] mt-2">Simultâneas</span>
                   </div>
-                  <div className="flex flex-col gap-1 text-center md:text-left">
-                    <h3 className="text-xl md:text-2xl font-bold text-white leading-tight">
+                  <div className="flex flex-col gap-2 text-center md:text-left">
+                    <h3 className="text-2xl md:text-2xl font-extrabold text-white leading-tight">
                       Contas Correntes Abertas
                     </h3>
-                    <div className="flex gap-3 justify-center md:justify-start text-bb-yellow font-bold tracking-widest text-base">
+                    <div className="flex gap-3 justify-center md:justify-start text-bb-yellow font-bold tracking-widest text-lg">
                       <span>USD</span>
                       <span className="text-white/20">|</span>
                       <span>EUR</span>
