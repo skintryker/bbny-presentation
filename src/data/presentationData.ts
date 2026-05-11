@@ -43,7 +43,7 @@ export const presentationData = {
       { period: "31/12/2025", investments: 612.6, clients: 108 },
       { period: "30/04/2026", investments: 671.6, clients: 116 },
     ],
-    note: "Valores em milhões de USD. Dados coletados no Power BI Banco do Brasil NY Branch.",
+    note: "Valores em milhões de USD. Dados extraídos do Power BI Banco do Brasil NY Branch.",
   },
   funding: {
     title: "Structured Letters of Credit",
