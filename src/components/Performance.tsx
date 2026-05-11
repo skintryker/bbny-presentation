@@ -10,15 +10,16 @@ export default function Performance() {
 
   const RenderCustomBarLabel = (props: any) => {
     const { x, y, width, value } = props;
+    if (value === 0) return null;
     return (
       <text 
         x={x + width / 2} 
-        y={y + 20} 
+        y={y + 18} 
         fill="#002d72" 
         textAnchor="middle" 
         dominantBaseline="middle" 
         fontSize={10} 
-        fontWeight="bold"
+        fontWeight="black"
       >
         {value}
       </text>
@@ -29,10 +30,10 @@ export default function Performance() {
     const { x, y, value } = props;
     return (
       <g>
-        <circle cx={x} cy={y - 20} r={10} fill="#005aa5" />
+        <circle cx={x} cy={y - 25} r={11} fill="#005aa5" stroke="#fff" strokeWidth={1} />
         <text 
           x={x} 
-          y={y - 20} 
+          y={y - 25} 
           fill="#fff" 
           textAnchor="middle" 
           dominantBaseline="middle" 
@@ -53,9 +54,9 @@ export default function Performance() {
           <p className="text-white/70 max-w-3xl mx-auto">{performance.description}</p>
         </div>
 
-        <div className="h-[500px] w-full glass-card p-8">
+        <div className="h-[550px] w-full glass-card p-8">
           <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart data={performance.chartData} margin={{ top: 30, right: 30, left: 20, bottom: 20 }}>
+            <ComposedChart data={performance.chartData} margin={{ top: 40, right: 30, left: 20, bottom: 20 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
               <XAxis 
                 dataKey="period" 
@@ -85,7 +86,7 @@ export default function Performance() {
                 contentStyle={{ backgroundColor: '#002d72', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px' }}
                 itemStyle={{ color: '#fff' }}
               />
-              <Legend verticalAlign="top" height={36}/>
+              <Legend verticalAlign="top" height={45}/>
               <Bar 
                 yAxisId="left" 
                 dataKey="investments" 
