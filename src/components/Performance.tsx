@@ -67,11 +67,10 @@ export default function Performance() {
                 dot={{ r: 6, fill: '#005aa5', strokeWidth: 2, stroke: '#fff' }}
                 label={{ 
                   position: 'bottom', 
-                  fill: '#fff', 
-                  fontSize: 10, 
+                  fill: '#005aa5', 
+                  fontSize: 11, 
                   fontWeight: 'bold', 
-                  offset: 15,
-                  background: { fill: '#005aa5', padding: 4, radius: 4 } 
+                  offset: 15
                 }}
               />
             </ComposedChart>
