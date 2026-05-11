@@ -49,16 +49,13 @@ const CaseStudy = () => {
 
             {/* Final Result - Centered Premium Banner */}
             <div className="relative max-w-3xl mx-auto mt-8">
-              {/* Refined Ambient Glow */}
-              <div className="absolute inset-0 bg-bb-yellow/10 blur-[80px] rounded-full"></div>
-
-              <div className="relative bg-gradient-to-br from-bb-blue-dark/90 to-bb-blue-light/40 backdrop-blur-md border border-white/10 p-10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden group hover:border-bb-yellow/30 transition-all duration-700">
+              <div className="relative bg-gradient-to-br from-bb-blue-dark/90 to-bb-blue-light/40 backdrop-blur-md border border-white/10 p-10 rounded-2xl overflow-hidden group hover:border-bb-yellow/30 transition-all duration-700">
                 {/* Subtle Inner Accent Line */}
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-bb-yellow/50 to-transparent opacity-50"></div>
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-bb-yellow/50 to-transparent opacity-50"></div>
 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
                   <div className="flex flex-col items-center shrink-0">
-                    <span className="text-6xl md:text-7xl font-black text-white leading-none tracking-tighter drop-shadow-2xl">
+                    <span className="text-6xl md:text-7xl font-black text-white leading-none tracking-tighter">
                       06
                     </span>
                     <span className="text-bb-yellow font-bold uppercase tracking-[0.3em] text-[9px] mt-3 opacity-80">
