@@ -25,12 +25,12 @@ const Funding = () => {
           <p className="text-white/70 max-w-3xl mx-auto">{funding.description}</p>
         </div>
 
-        <div className="glass-card p-4 md:p-8 mb-12">
-          <div className="h-[350px] md:h-[450px] w-full">
+        <div className="glass-card p-3 sm:p-4 md:p-8 mb-12">
+          <div className="h-[280px] sm:h-[350px] md:h-[450px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart 
                 data={funding.chartData} 
-                margin={{ top: 20, right: -10, left: -20, bottom: 0 }}
+                margin={{ top: 15, right: -15, left: -25, bottom: -5 }}
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
                 <XAxis 
