@@ -6,8 +6,8 @@ const InternalSynergy = () => {
   const { synergy } = presentationData;
 
   return (
-    <section className="flex flex-col justify-center py-6 px-6 lg:px-12 max-w-7xl mx-auto">
-      <div className="glass-card p-10">
+    <section className="py-12 px-6 lg:px-12 max-w-7xl mx-auto">
+      <div className="glass-card">
         <h2 className="text-3xl font-bold text-bb-yellow mb-6">{synergy.title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

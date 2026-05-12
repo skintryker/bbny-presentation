@@ -132,7 +132,7 @@ export const presentationData = {
   caseStudy: {
     title: "Estudo de Caso",
     subtitle: "EXPANSÃO DE PRODUTOS POR CLIENTE",
-    statusQuo: "O cliente mantinha um relacionamento restrito ao Banco do Brasil, utilizando exclusivamente produtos de crédito estruturado, sem aproveitar as soluções de cash management e sem base de depósitos ativa em Nova York.",
+    statusQuo: "Cliente com produto de crédito apenas.",
     result: "Abertura simultânea de 6 contas correntes.",
     currencies: "Disponibilização de fluxos em Dólar (USD), Euro (EUR) e Libras (GBP).",
     impact: "Após abordagem através do gerente de relacionamento, conseguimos abrir 6 contas correntes, sendo 3 moedas diferentes.",

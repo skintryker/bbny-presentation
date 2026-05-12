@@ -8,8 +8,8 @@ const NextSteps = () => {
   const { nextSteps } = presentationData;
 
   return (
-    <section className="flex flex-col justify-center py-12 px-6">
-      <div className="max-w-7xl mx-auto w-full">
+    <section className="py-24 px-6 bg-bb-blue-dark relative overflow-hidden">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white mb-4">{nextSteps.title}</h2>
           <div className="h-1 w-20 bg-bb-yellow mx-auto rounded-full" />
