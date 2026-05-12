@@ -27,7 +27,7 @@ const ProjectHunter = () => {
         </div>
 
         <div className="text-center mb-16 md:pr-32 md:text-left">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+          <h2 className="text-3xl font-bold text-white mb-6 tracking-tight">
             {hunter.title}
           </h2>
           <p className="text-white/70 max-w-4xl text-lg leading-relaxed">

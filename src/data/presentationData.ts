@@ -85,23 +85,23 @@ export const presentationData = {
     title: "Projeto Hunter | Execução e Resultados",
     missions: [
       {
-        region: "Texas & NY Membership",
+        region: "Texas & NY",
         activities: [
-          "Consolidação de membership estratégico no Texas",
-          "Participamos de feiras, coquetéis e reuniões com clientes através da Câmara",
-          "Fechamos uma operação de Working Capital com o cliente Tramontina"
+          "Consolidação de membership estratégico no Texas, com foco no segmento de Óleo e Gás",
+          "Visita na feira CERA Week no Texas, coquetéis e reuniões com clientes",
+          "Visita no evento FancyFood em NY com abordagens a stands de empresas brasileiras"
         ]
       },
       {
         region: "Southeast (Atlanta)",
         activities: [
-          "Visita estratégica a +30 stands brasileiros em feira setorial",
+          "Visita à IPPE EXPO, com abordagem a +30 stands brasileiros",
           "Brazilian Outlook: Networking com GM da WEG (Abertura de conta em curso)",
           "Parceria APEX: Inteligência de mercado e mapeamento de eventos"
         ]
       },
       {
-        region: "Minnesota & Regional",
+        region: "Minnesota",
         activities: [
           "Reuniões com órgãos governamentais para promoção do Banco do Brasil NY na região",
           "Reuniões online recorrentes com foco em 'Flavor Brazil'",
@@ -132,7 +132,7 @@ export const presentationData = {
   caseStudy: {
     title: "Estudo de Caso",
     subtitle: "EXPANSÃO DE PRODUTOS POR CLIENTE",
-    statusQuo: "Cliente com produto de crédito apenas.",
+    statusQuo: "Relacionamento focado exclusivamente em operações de crédito.",
     result: "Abertura simultânea de 6 contas correntes.",
     currencies: "Disponibilização de fluxos em Dólar (USD), Euro (EUR) e Libras (GBP).",
     impact: "Após abordagem através do gerente de relacionamento, conseguimos abrir 6 contas correntes, sendo 3 moedas diferentes.",

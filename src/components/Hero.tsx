@@ -7,16 +7,14 @@ export default function Hero() {
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-bb-blue-dark relative overflow-hidden">
       <div className="z-10 max-w-4xl">
         <div className="mb-12 flex justify-center">
-          <Image 
+          <img 
             src="./bb-logo.jpg" 
             alt="Banco do Brasil" 
-            width={300} 
-            height={80} 
-            className="h-16 w-auto object-contain"
-            priority
+            style={{ width: '240px', height: 'auto' }}
+            className="object-contain"
           />
         </div>
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        <h1 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
           {hero.title}
         </h1>
         <p className="text-xl md:text-2xl text-white/80 mb-12">

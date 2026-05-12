@@ -73,32 +73,32 @@ export default function Home() {
       </div>
 
       {/* BOTÕES DE NAVEGAÇÃO - RESTAURADO TAMANHO 14 */}
+      {/* Botões de Navegação Menores */}
       <div className="fixed bottom-10 right-10 z-[99999] flex gap-4">
         <button 
           onClick={prev}
-          className={`w-14 h-14 rounded-full flex items-center justify-center border-2 transition-all active:scale-90 ${
+          className={`w-12 h-12 rounded-full flex items-center justify-center border-2 transition-all active:scale-90 ${
             currentSlide === 0 
             ? 'bg-white/5 border-white/5 opacity-10 cursor-not-allowed' 
             : 'bg-bb-blue-dark/80 border-white/20 text-white hover:border-bb-yellow'
           }`}
           disabled={currentSlide === 0}
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft size={20} />
         </button>
 
         <button 
           onClick={next}
-          className={`w-14 h-14 rounded-full flex items-center justify-center border-2 transition-all active:scale-90 ${
+          className={`w-12 h-12 rounded-full flex items-center justify-center border-2 transition-all active:scale-90 ${
             currentSlide === totalSlides - 1 
             ? 'bg-white/5 border-white/5 opacity-10 cursor-not-allowed' 
             : 'bg-bb-yellow border-bb-yellow text-bb-blue-dark shadow-[0_0_30px_rgba(252,235,0,0.3)] hover:scale-110'
           }`}
           disabled={currentSlide === totalSlides - 1}
         >
-          <ChevronRight size={24} />
+          <ChevronRight size={20} />
         </button>
       </div>
-
     </div>
   );
 }

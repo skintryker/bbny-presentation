@@ -18,7 +18,7 @@ const HunterExecution = () => {
     <section className="py-24 px-6 bg-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-6 tracking-tight">
+          <h2 className="text-3xl font-bold text-white mb-6 tracking-tight">
             {hunterExecution.title}
           </h2>
           <div className="h-1 w-20 bg-bb-yellow mx-auto rounded-full" />

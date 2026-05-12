@@ -11,7 +11,7 @@ const StrategicPlanning = () => {
     <section className="py-24 px-6 bg-bb-blue-dark">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-6">{planning.title}</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">{planning.title}</h2>
           <p className="text-bb-yellow font-medium mb-4">{planning.context}</p>
           <p className="text-white/70 max-w-5xl mx-auto text-lg leading-relaxed">
             {planning.description}

@@ -13,7 +13,7 @@ const CaseStudy = () => {
         <div className="glass-card overflow-hidden relative border-t-8 border-t-bb-yellow">
           <div className="p-12">
             <div className="mb-12">
-              <h2 className="text-4xl font-bold text-white mb-2">{caseStudy.title}</h2>
+              <h2 className="text-3xl font-bold text-white mb-2">{caseStudy.title}</h2>
               <p className="text-bb-yellow font-medium uppercase tracking-widest text-sm">{caseStudy.subtitle}</p>
             </div>
             
@@ -55,7 +55,7 @@ const CaseStudy = () => {
                     <span className="text-5xl md:text-6xl font-black text-white leading-none tracking-tighter">
                       06
                     </span>
-                    <span className="text-bb-yellow font-bold uppercase tracking-[0.3em] text-[9px] mt-3 opacity-80">
+                    <span className="text-bb-yellow font-bold uppercase tracking-[0.3em] text-[11px] mt-3 opacity-90">
                       Simultâneas
                     </span>
                   </div>
