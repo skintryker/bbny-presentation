@@ -5,14 +5,10 @@ export default function Hero() {
   const { hero } = presentationData;
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-bb-blue-dark relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-bb-yellow/10 rounded-full blur-3xl -mr-48 -mt-48" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-bb-blue-light/20 rounded-full blur-3xl -ml-48 -mb-48" />
-      
       <div className="z-10 max-w-4xl">
         <div className="mb-12 flex justify-center">
           <Image 
-            src="/bb-logo.jpg" 
+            src="./bb-logo.jpg" 
             alt="Banco do Brasil" 
             width={300} 
             height={80} 

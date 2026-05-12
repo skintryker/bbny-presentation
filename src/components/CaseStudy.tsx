@@ -11,8 +11,6 @@ const CaseStudy = () => {
     <section className="py-24 px-6 bg-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="glass-card overflow-hidden relative border-t-8 border-t-bb-yellow">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-bb-yellow/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
-          
           <div className="p-12">
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-white mb-2">{caseStudy.title}</h2>

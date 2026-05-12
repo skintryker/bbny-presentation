@@ -30,7 +30,7 @@ const Funding = () => {
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart 
                 data={funding.chartData} 
-                margin={{ top: 15, right: -15, left: -25, bottom: -5 }}
+                margin={{ top: 30, right: 30, left: 20, bottom: 20 }}
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
                 <XAxis 
