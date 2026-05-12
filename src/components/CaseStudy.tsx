@@ -52,7 +52,7 @@ const CaseStudy = () => {
 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
                   <div className="flex flex-col items-center shrink-0">
-                    <span className="text-6xl md:text-7xl font-black text-white leading-none tracking-tighter">
+                    <span className="text-5xl md:text-6xl font-black text-white leading-none tracking-tighter">
                       06
                     </span>
                     <span className="text-bb-yellow font-bold uppercase tracking-[0.3em] text-[9px] mt-3 opacity-80">
@@ -63,7 +63,7 @@ const CaseStudy = () => {
                   <div className="w-px h-16 bg-white/10 hidden md:block"></div>
 
                   <div className="flex flex-col gap-2 text-center md:text-left whitespace-nowrap">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight tracking-tight">
+                    <h3 className="text-xl md:text-2xl font-bold text-white leading-tight tracking-tight">
                       Contas Correntes Abertas
                     </h3>
                     <div className="flex gap-4 justify-center md:justify-start items-center mt-1">
