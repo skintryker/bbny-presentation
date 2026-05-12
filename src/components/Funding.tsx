@@ -18,15 +18,15 @@ const Funding = () => {
   const { funding } = presentationData;
 
   return (
-    <section className="py-24 px-6 bg-white/5">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">{funding.title}</h2>
-          <p className="text-white/70 max-w-3xl mx-auto">{funding.description}</p>
+    <section className="py-8 px-6 bg-white/5 h-full flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="text-center mb-6">
+          <h2 className="text-3xl font-bold mb-2">{funding.title}</h2>
+          <p className="text-white/70 max-w-3xl mx-auto text-sm">{funding.description}</p>
         </div>
 
-        <div className="glass-card p-3 sm:p-4 md:p-8 mb-12">
-          <div className="h-[280px] sm:h-[350px] md:h-[450px] w-full">
+        <div className="glass-card p-3 sm:p-4 md:p-6 mb-6">
+          <div className="h-[250px] sm:h-[300px] md:h-[360px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart 
                 data={funding.chartData} 
@@ -85,18 +85,18 @@ const Funding = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h3 className="text-xl font-semibold text-white mb-6 uppercase tracking-wider text-sm opacity-60">Trading Companies</h3>
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl">
+          <h3 className="text-lg font-semibold text-white mb-4 uppercase tracking-wider text-xs opacity-60">Trading Companies</h3>
+          <div className="flex flex-wrap justify-center gap-3 max-w-4xl">
             {funding.clients.map((client, index) => (
               <span 
                 key={index}
-                className="px-6 py-2 bg-white/5 border border-white/10 rounded-lg text-sm text-gray-200 hover:border-bb-yellow hover:text-bb-yellow transition-all duration-300"
+                className="px-4 py-1.5 bg-white/5 border border-white/10 rounded-lg text-xs text-gray-200 hover:border-bb-yellow hover:text-bb-yellow transition-all duration-300"
               >
                 {client}
               </span>
             ))}
           </div>
-          <p className="text-white/40 text-xs mt-12 italic">
+          <p className="text-white/40 text-[10px] mt-6 italic">
             {funding.note}
           </p>
         </div>
