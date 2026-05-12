@@ -40,26 +40,26 @@ export default function Home() {
   }, [currentSlide]);
 
   return (
-    <div className="bg-bb-blue-dark min-h-screen text-white relative overflow-x-hidden">
+    <div className="bg-bb-blue-dark h-screen w-full text-white relative overflow-hidden flex flex-col">
       
-      {/* Barra de Progresso no Topo */}
-      <div className="fixed top-0 left-0 w-full h-1 z-[9999] bg-white/5">
+      {/* BARRA DE PROGRESSO - RESTAURADA ALTURA 2 */}
+      <div className="fixed top-0 left-0 w-full h-2 z-[9999] bg-white/5">
         <div 
-          className="h-full bg-bb-yellow transition-all duration-300"
+          className="h-full bg-bb-yellow transition-all duration-300 shadow-[0_0_15px_#FCEB00]"
           style={{ width: `${((currentSlide + 1) / totalSlides) * 100}%` }}
         />
       </div>
 
-      {/* Contador Discreto no Topo Direito */}
+      {/* CONTADOR DISCRETO - RESTAURADO TAMANHO XS */}
       <div className="fixed top-6 right-6 z-[9999]">
-        <div className="bg-white/10 backdrop-blur-md text-white/40 px-3 py-1 rounded-full font-mono text-xs border border-white/5 tracking-tighter">
+        <div className="bg-white/10 backdrop-blur-md text-white/40 px-4 py-1.5 rounded-full font-mono text-xs border border-white/5 tracking-tighter">
           {String(currentSlide + 1).padStart(2, '0')} / {String(totalSlides).padStart(2, '0')}
         </div>
       </div>
 
-      {/* Área de Conteúdo - Centralização Total */}
-      <div className="min-h-screen w-full flex items-center justify-center py-20 px-4 md:px-8">
-        <div className="w-full max-w-7xl mx-auto flex flex-col justify-center animate-in fade-in duration-500">
+      {/* ÁREA DO CONTEÚDO - CENTRALIZADA SEM ESPAÇAMENTO NO TOPO (REMOVIDO PY-20) */}
+      <div className="flex-grow w-full flex items-center justify-center relative z-10 overflow-y-auto">
+        <div className="w-full max-w-7xl mx-auto animate-in fade-in duration-500 px-4 md:px-8">
           {currentSlide === 0 && <Hero />}
           {currentSlide === 1 && <Performance />}
           {currentSlide === 2 && <Funding />}
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Botões de Navegação Menores */}
+      {/* BOTÕES DE NAVEGAÇÃO - RESTAURADO TAMANHO 14 */}
       <div className="fixed bottom-10 right-10 z-[99999] flex gap-4">
         <button 
           onClick={prev}
