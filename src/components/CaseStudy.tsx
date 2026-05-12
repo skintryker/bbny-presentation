@@ -8,46 +8,50 @@ const CaseStudy = () => {
 
   return (
     <section className="flex flex-col justify-center py-12 px-6 h-full">
-      <div className="max-w-6xl mx-auto w-full flex flex-col gap-12 md:gap-20">
+      <div className="max-w-7xl mx-auto w-full flex flex-col gap-10 md:gap-14">
         
         {/* Header - Centered & Premium */}
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             {caseStudy.title}
           </h2>
-          <div className="h-1 w-24 bg-bb-yellow mx-auto mb-6 rounded-full shadow-[0_0_10px_#FCEB00]"></div>
+          <div className="h-1.5 w-24 bg-bb-yellow mx-auto mb-6 rounded-full shadow-[0_0_15px_#FCEB00]"></div>
           <p className="text-bb-yellow font-black uppercase tracking-[0.4em] text-xs opacity-80">
             {caseStudy.subtitle}
           </p>
         </div>
 
-        {/* Narrative Section - Balanced Distribution */}
+        {/* Narrative Section - Balanced Distribution with standard Font Sizes */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch">
           {/* Status Quo */}
-          <div className="group relative bg-white/5 border border-white/10 p-10 rounded-[32px] transition-all duration-500 hover:bg-white/[0.07]">
+          <div className="group relative bg-white/5 border border-white/10 p-10 rounded-[32px] transition-all duration-500 hover:bg-white/[0.07] flex flex-col">
             <div className="flex items-center gap-3 text-white/40 uppercase tracking-widest text-[10px] font-black mb-8">
               <div className="w-8 h-[1px] bg-white/20"></div>
               <span>Status Quo</span>
             </div>
-            <p className="text-gray-300 text-xl md:text-2xl leading-relaxed italic font-light">
-              "{caseStudy.statusQuo}"
-            </p>
+            <div className="flex-grow flex items-center">
+              <p className="text-gray-300 text-2xl md:text-3xl leading-relaxed italic font-light">
+                "{caseStudy.statusQuo}"
+              </p>
+            </div>
           </div>
 
           {/* Strategic Result */}
-          <div className="group relative bg-bb-blue-light/10 border border-bb-blue-light/20 p-10 rounded-[32px] shadow-2xl transition-all duration-500 hover:bg-bb-blue-light/15">
+          <div className="group relative bg-bb-blue-light/10 border border-bb-blue-light/20 p-10 rounded-[32px] shadow-2xl transition-all duration-500 hover:bg-bb-blue-light/15 flex flex-col">
             <div className="flex items-center gap-3 text-bb-yellow uppercase tracking-widest text-[10px] font-black mb-8">
               <div className="w-8 h-[1px] bg-bb-yellow/30"></div>
               <span>Resultado Estratégico</span>
             </div>
-            <p className="text-white text-xl md:text-2xl leading-relaxed font-medium">
-              {caseStudy.impact}
-            </p>
+            <div className="flex-grow flex items-center">
+              <p className="text-white text-2xl md:text-3xl leading-relaxed font-medium">
+                {caseStudy.impact}
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Impact Banner - High-end Finish */}
-        <div className="max-w-4xl mx-auto w-full mt-4">
+        <div className="max-w-5xl mx-auto w-full">
           <div className="relative bg-gradient-to-br from-bb-blue-dark to-bb-blue-light/20 border border-white/10 p-12 rounded-[50px] overflow-hidden group hover:border-bb-yellow/20 transition-all duration-700">
             {/* Subtle light bar */}
             <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-bb-yellow/30 to-transparent"></div>
